@@ -1,0 +1,12 @@
+.details-part{
+    width: 200px;
+}
+.menu-option{
+    width: 125px;
+    text-align: left;
+}
+.input{
+    height: 15px;
+    width: 100px;
+    margin: 0px;
+}
