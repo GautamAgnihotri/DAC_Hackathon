@@ -1,6 +1,32 @@
 import React from 'react'
 import './Login'
 function Login() {
+    console.log(config.url);
+    const [email , setEmail] = useState('');
+    const [password , setPassword] = useState('');
+    const navigate = useNavigate();
+    const  onLogin = async()=>{
+        console.log("Login function called");
+        console.log(email , password);
+        try{
+            const response = await axios.post(config.url+"/user/signin",{
+                email:email,
+                password:password
+            })
+            console.log(response);
+            if(response.data.status == 'success'){
+                toast.success("Signin Successfully");
+                navigate('/')
+            }else{
+                toast.warn("Invalid email or password");
+            }
+        } catch(e){
+            console.log("error occured while login :"+e);
+            toast("Something went wrong !!")
+
+        }
+       
+    }
     return (
         <div className="container">
             <div >

@@ -1,7 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './AddBlog.css'
+import Categories from '../Categories/Categories'
+
 
 function AddBlog() {
+    const validate = () =>{
+        return
+    }
+    const [into, setInfo]=useState({
+        title: '',
+        content:'',
+        Category: 0
+    })
     return (
         <div className='container'>
             <div>
@@ -52,7 +62,7 @@ function AddBlog() {
                                 </select>
                             </div>
                             <div>
-                                <button className='button'>Add Blog</button>
+                                <button onClick={validate} className='button'>Add Blog</button>
                                 <button className='button'>Cancel</button>
                             </div>
                         </div>
