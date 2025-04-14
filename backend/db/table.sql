@@ -21,14 +21,12 @@ INSERT INTO categories(title,description) Values("Nature","This contain all natu
 
 CREATE TABLE blogs(id INT PRIMARY KEY AUTO_INCREMENT,
 title VARCHAR(50) not null,
-contents VARCHAR(100) not null,
+contents text not null,
 created_time Datetime DEFAULT CURRENT_TIMESTAMP,
 user_id INT,
 category_id INT ,
 FOREIGN KEY(user_id) REFERENCES users(id),
 FOREIGN KEY(category_id) REFERENCES categories(id)
 );
-
-
 
 Insert Into blogs(title,contents,user_id,category_id) Values("How to Nature Journal the Signs of Spring","As life continues to shift, many of us are seeking ways to reconnect with the world around us. ",1,1);
