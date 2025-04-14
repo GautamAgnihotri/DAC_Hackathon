@@ -1,11 +1,11 @@
 import React from 'react'
-import './Categories.css'
+import './FindBlog.css'
 
-function Categories() {
+function FindBlog() {
     return (
         <div className='container'>
             <div>
-                <div className='heading'>Categories</div>
+                <div className='heading'>All Blogs</div>
                 <div className='inner-container'>
                     <div>
                         <table>
@@ -23,7 +23,10 @@ function Categories() {
                                     <td className="menu-option">Find Blog</td>
                                 </tr>
                                 <tr>
-                                    <td className="menu-option">Categories</td>
+                                    <td className="menu-option">Add Category</td>
+                                </tr>
+                                <tr>
+                                    <td className="menu-option">Show Categories</td>
                                 </tr>
                                 <tr>
                                     <td className="menu-option">Logout</td>
@@ -33,26 +36,25 @@ function Categories() {
                     </div>
                     <div className='display-blog-content'>
                         <div>
-                            <label htmlFor="">Category: </label>
-                            <input type="text" className='input'/>
-                            <div className='button'>
-                                <button className='add-Category-Button'>Add Category</button>
-                            </div>
+                            <label htmlFor="findblog">Search Blog: </label>
+                            <input type="text" className='input' id='findblog'/>
+                            <img src="" alt="icon" />
                         </div>
-                        <div>
-                            <table border="1" >
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Category</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                        <table border="1" >
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Date</th>
+                                    <th>Author</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                                </tbody>
-                            </table>
-                        </div>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -60,4 +62,4 @@ function Categories() {
     )
 }
 
-export default Categories
+export default FindBlog

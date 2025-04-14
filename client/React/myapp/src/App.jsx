@@ -3,12 +3,12 @@ import './App.css'
 import Login from './pages/LoginPage/Login'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Register from './pages/RegisterPage/Register'
-import MenuBoard from './pages/MenuBoardPage/MenuBoard'
-import BlogDetails from './pages/BlogDetailsPage/BlogDetails'
-import CreateEditBlog from './pages/AddBlogPage/AddBlog'
-import SearchBlog from './pages/SearchBlogPage/SearchBlog'
-import ViewBlogs from './pages/ViewBlogsPage/ViewBlogs'
-
+import AllBlogs from './pages/AllBlogs/AllBlogs'
+import AddBlog from './pages/AddBlog/AddBlog'
+import MyBlogs from './pages/MyBlogs/MyBlogs'
+import FindBlog from './pages/FindBlog/FindBlog'
+import Categories from './pages/Categories/Categories'
+import EditBlog from './pages/EditBlog/EditBlog'
 
 
 function App() {
@@ -19,11 +19,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Login />} /> 
         <Route path='register' element={<Register />} /> 
-        <Route path='menu-board' element={<MenuBoard />} /> 
-        <Route path='blog-details' element={<BlogDetails />} /> 
-        <Route path='create-edit-blog' element={<CreateEditBlog />} /> 
-        <Route path='search-blog' element={<SearchBlog />} /> 
-        <Route path='view-blog' element={<ViewBlogs />} /> 
+        <Route path='add-blog' element={<AddBlog />} /> 
+        <Route path='my-blogs' element={<MyBlogs />} /> 
+        <Route path='all-blogs' element={<AllBlogs />} /> 
+        <Route path='find-blog' element={<FindBlog />} /> 
+        <Route path='categories' element={<Categories />} /> 
+        <Route path='edit-blog' element={<EditBlog />} /> 
       </Routes>
     </BrowserRouter>
   );
