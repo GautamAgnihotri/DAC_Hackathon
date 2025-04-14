@@ -1,0 +1,38 @@
+.container{
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.label{
+    width: 100px;
+    text-align: left;
+    padding-left: 60px;
+    height: 35px;
+    padding-right: 0px;
+    color:brown;
+}
+.input{
+    height: 30px;
+    padding-left: 0px;
+    padding-right: 30px;
+}
+.heading{
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid;
+}
+.button{
+    width: 80px;
+    margin: 20px;
+}
+.body{
+    padding-top: 20px;
+    border: 2px solid;
+    border-top: 0px;
+}
+.buttons{
+    text-align: center;
+}
