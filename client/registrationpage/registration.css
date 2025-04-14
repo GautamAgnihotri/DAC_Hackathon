@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+.login-page{
+    border: 2px solid black;
+    text-align: center;
+    margin: 30pxs;
+    height: 400px;
+    width: 400px;
+}
+.heading{
+    border: 2px solid black;
+}
+.login-details{
+    margin: 50px;
+}
+.input{
+    margin: 20px;
+}
+.button{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+}

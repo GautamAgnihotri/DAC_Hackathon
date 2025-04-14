@@ -1,0 +1,21 @@
+.container{
+    background-color: aqua;
+    margin-top: 25%;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.label{
+    width: 100px;
+    text-align: left;
+}
+.input{
+    height: 30px;
+}
+.theading{
+    height: 30px;
+}
