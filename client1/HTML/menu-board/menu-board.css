@@ -1,0 +1,17 @@
+.heading{
+    text-align: center;
+}
+.table{
+    border: 2px solid;
+    width: 400px;
+    height: 200px;
+}
+.tbody{
+    border: 2px solid;
+}
+.details-part{
+    width: 200px;
+}
+.menu-option{
+    width: 125px;
+}

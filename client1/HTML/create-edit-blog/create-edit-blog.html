@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create/Edit Blog</title>
+    </head>
+    <body>
+        <table className="table" border="1">
+            <thead className="heading">
+                <tr>
+                    <th rowSpan="2">All Blogs / My Blogs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td className="menu-option">My Blogs</td>
+                    <td rowSpan="7">
+                        <div className="details-part">
+                            <div>
+                                <label htmlFor="title">Title: </label>
+                                <input type="text" name id="title">
+                            </div>
+                            <div>
+                                <div><label htmlFor>Contents: </label></div>
+                                <textarea name id></textarea>
+                            </div>
+                            <div>
+                                <label htmlFor="category">Category: </label>
+                                <select name="category" id="category">
+                                    <option value="1">DAC</option>
+                                    <option value="2">DBDA</option>
+                                    <option value="3">DMC</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button>Create</button>
+                                <button>Cancel</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td className="menu-option">All Blogs</td>
+                </tr>
+                <tr>
+                    <td className="menu-option">Add Category</td>
+                </tr>
+                <tr>
+                    <td className="menu-option">Show Categories</td>
+                </tr>
+                <tr>
+                    <td className="menu-option">Add Blog</td>
+                </tr>
+                <tr>
+                    <td className="menu-option">Search Blogs</td>
+                </tr>
+                <tr>
+                    <td className="menu-option">Logout</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
