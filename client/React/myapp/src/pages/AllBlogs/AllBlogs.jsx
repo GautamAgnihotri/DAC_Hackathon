@@ -1,11 +1,11 @@
 import React from 'react'
-import './Categories.css'
+import './AllBlogs.css'
 
-function Categories() {
+function AllBlogs() {
     return (
         <div className='container'>
             <div>
-                <div className='heading'>Categories</div>
+                <div className='heading'>All Blogs</div>
                 <div className='inner-container'>
                     <div>
                         <table>
@@ -32,27 +32,21 @@ function Categories() {
                         </table>
                     </div>
                     <div className='display-blog-content'>
-                        <div>
-                            <label htmlFor="">Category: </label>
-                            <input type="text" className='input'/>
-                            <div className='button'>
-                                <button className='add-Category-Button'>Add Category</button>
-                            </div>
-                        </div>
-                        <div>
-                            <table border="1" >
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Category</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                        <table border="1" >
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Date</th>
+                                    <th>Author</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                                </tbody>
-                            </table>
-                        </div>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -60,4 +54,4 @@ function Categories() {
     )
 }
 
-export default Categories
+export default AllBlogs
